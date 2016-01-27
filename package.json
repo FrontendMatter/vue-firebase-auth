@@ -1,0 +1,50 @@
+{
+  "name": "vue-firebase-auth",
+  "version": "0.1.0",
+  "description": "Vue.js Authentication with Firebase.",
+  "main": "dist/vue-firebase-auth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config build/webpack.config.dev.js --progress --watch",
+    "build": "NODE_ENV=production webpack --config build/webpack.config.production.js --progress",
+    "build-dev": "webpack --config build/webpack.config.dev.js --progress",
+    "lib-dev": "babel -d ./lib --watch --presets es2015 ./src/lib",
+    "lib-build": "babel -d ./lib --presets es2015 ./src/lib"
+  },
+  "author": "Laza Bogdan <laza.bogdan@macro-net.ro>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^5.8.34",
+    "bootstrap-sass": "^3.3.6",
+    "css-loader": "^0.23.0",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.2.0",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "firebase-store": "^0.1.0",
+    "html-loader": "^0.4.0",
+    "imports-loader": "^0.6.5",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-import-loader": "^0.2.0",
+    "style-loader": "^0.13.0",
+    "themekit-webpack-config": "^1.0.1",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.2",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.0.2",
+    "vue-style-loader": "^1.0.0",
+    "vue-validator": "^2.0.0-alpha.16",
+    "webpack": "^1.12.11"
+  },
+  "dependencies": {
+    "vue": "^1.0.15"
+  }
+}
